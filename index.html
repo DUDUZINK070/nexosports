@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>NEXO Sports — Sports Intelligence</title>
+<meta name="description" content="NEXO Sports — Sports Intelligence. Análise estatística de futebol e basquete: simples seletivas, múltipla inteligente, gerador de odd alta com risco controlado, desempenho e banca.">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="Logo NEXO Sports" class="brand-logo">
+      <div>
+        <strong>NEXO <span class="grad">Sports</span></strong>
+        <small>SPORTS INTELLIGENCE</small>
+      </div>
+    </div>
+    <nav class="nav" id="nav">
+      <button class="nav-item active" data-view="dashboard">Dashboard</button>
+      <button class="nav-item" data-view="simples-futebol">Simples Futebol</button>
+      <button class="nav-item" data-view="simples-basquete">Simples Basquete</button>
+      <button class="nav-item" data-view="multipla">Múltipla Inteligente</button>
+      <button class="nav-item" data-view="gerador">Gerador de Odd Alta</button>
+      <button class="nav-item" data-view="ao-vivo">Ao Vivo</button>
+      <button class="nav-item" data-view="mercados">Melhores Mercados</button>
+      <button class="nav-item" data-view="desempenho">Desempenho</button>
+      <button class="nav-item" data-view="historico">Histórico</button>
+      <button class="nav-item" data-view="fechamento">Fechamento</button>
+      <button class="nav-item" data-view="banca">Banca</button>
+      <button class="nav-item" data-view="vip">Área VIP</button>
+      <button class="nav-item" data-view="fontes">Fontes de Dados</button>
+      <button class="nav-item owner" data-view="automacao">Automação · Dono</button>
+      <button class="nav-item" data-view="ajuda">Ajuda</button>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="dot"></span> Versão publicada (front-end)<br>
+      <small>Automação ao vivo conecta na versão com servidor.</small>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <img src="assets/logo.svg" alt="" class="top-logo">
+      <div class="top-title"><strong>NEXO Sports</strong><small>Sports Intelligence</small></div>
+      <span class="badge">Novembro/2026</span>
+    </header>
+    <nav class="mobile-nav" id="mobileNav"></nav>
+
+    <!-- DASHBOARD -->
+    <section class="view active" id="view-dashboard">
+      <h1>Dashboard</h1>
+      <p class="sub">Resumo do fechamento de novembro/2026 (até 18/11) — dados reais do dono.</p>
+
+      <div class="alert-red">
+        <strong>⚠ Alerta permanente — Bingos antigos: ROI −23,2%</strong>
+        <p>21 bilhetes · 2 GREEN × 17 RED · acerto de apenas 10,5% · <strong>−3,02u</strong>. Isso não foi azar: bilhetes buscando odd 7+ com pernas de ~50–60% têm, pela matemática, ~10% de chance de bater. Por isso o modelo antigo de bingo foi <strong>aposentado</strong> e substituído pela <button class="linklike" data-goto="multipla">Múltipla Inteligente</button> (máx. 3 pernas, prob. mínima de 68% por perna e prob. conjunta ≥ 25% exibida antes de publicar).</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>⚽ Simples Futebol</h3>
+          <div class="big">40 <small>palpites</small></div>
+          <ul class="stats">
+            <li><span>Acerto</span><b class="blue">58,8%</b></li>
+            <li><span>GREEN / RED</span><b><span class="green">20</span> / <span class="red">14</span></b></li>
+            <li><span>VOID / Pendentes</span><b>1 / 5</b></li>
+            <li><span>Lucro</span><b class="green">+4,09u</b></li>
+            <li><span>ROI</span><b class="green">+12,0%</b></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>🏀 Simples Basquete (NBA)</h3>
+          <div class="big">67 <small>palpites</small></div>
+          <ul class="stats">
+            <li><span>Acerto</span><b class="blue">56,5%</b></li>
+            <li><span>GREEN / RED</span><b><span class="green">35</span> / <span class="red">27</span></b></li>
+            <li><span>VOID / Pendentes</span><b>0 / 5</b></li>
+            <li><span>Lucro</span><b class="green">+4,27u</b></li>
+            <li><span>ROI</span><b class="green">+6,9%</b></li>
+          </ul>
+        </article>
+        <article class="card total">
+          <h3>🧾 Total Geral</h3>
+          <div class="big">128 <small>registros</small></div>
+          <ul class="stats">
+            <li><span>GREEN / RED</span><b><span class="green">57</span> / <span class="red">58</span></b></li>
+            <li><span>VOID / Pendentes</span><b>1 / 12</b></li>
+            <li><span>Lucro</span><b class="green">+5,34u</b></li>
+            <li><span>ROI</span><b class="green">+4,9%</b></li>
+          </ul>
+        </article>
+      </div>
+
+      <article class="panel">
+        <h2>📈 Lucro acumulado — dia a dia (unidades)</h2>
+        <p class="sub">Série diária de novembro/2026. A curva termina em <strong>+5,34u</strong>, que é a soma exata dos resultados diários.</p>
+        <div id="chart" class="chart" role="img" aria-label="Gráfico de barras do lucro diário e linha do lucro acumulado, terminando em mais 5,34 unidades"></div>
+        <div class="legend"><span><i class="sw green-bg"></i> Dia positivo</span><span><i class="sw red-bg"></i> Dia negativo</span><span><i class="sw blue-bg"></i> Linha = acumulado</span></div>
+      </article>
+
+      <div class="cards">
+        <article class="panel">
+          <h2>Regras do NEXO (valem em todas as telas)</h2>
+          <ul class="rules">
+            <li><b>Simples:</b> no máximo <b>3 por esporte/dia</b>. Dia sem valor = <span class="pill">SEM ENTRADA</span>, sem forçar palpite.</li>
+            <li><b>Múltipla Inteligente:</b> máx. <b>3 pernas</b>, prob. mínima de <b>68% por perna</b>, prob. conjunta <b>≥ 25%</b> sempre exibida.</li>
+            <li><b>Odd alta:</b> probabilidade conjunta sempre à mostra. Odd alta <b>nunca</b> é garantida.</li>
+            <li><b>Banca:</b> stake com teto de <b>3u</b> por palpite (1u = 1% da banca).</li>
+            <li><b>Odd real ou nada:</b> mercado sem odd real de uma fonte não entra.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h2>Resumo de hoje</h2>
+          <ul class="stats">
+            <li><span>Simples Futebol</span><b>0/3 — aguardando rodada</b></li>
+            <li><span>Simples Basquete</span><b>0/3 — aguardando rodada</b></li>
+            <li><span>Múltipla Inteligente</span><b class="amber">PENDENTE</b></li>
+            <li><span>Fonte de odds</span><b class="amber">Aguardando configuração</b></li>
+          </ul>
+          <p class="note">Nesta versão publicada (front-end estático), as rodadas automáticas com odds ao vivo rodam na versão com servidor. Veja <button class="linklike" data-goto="fontes">Fontes de Dados</button> e <button class="linklike" data-goto="automacao">Automação</button>.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SIMPLES -->
+    <section class="view" id="view-simples-futebol">
+      <h1>Simples Futebol</h1>
+      <p class="sub">No máximo <strong>3 palpites por dia</strong>, só com odd real, probabilidade calibrada e valor (EV). Novembro até 18/11: <strong>58,8% de acerto · +4,09u · ROI +12,0%</strong>.</p>
+      <div class="empty"><span class="pill big-pill">SEM ENTRADA</span><p>Nenhum palpite publicado nesta versão estática. Na versão com servidor, a rodada automática publica aqui apenas o que passar nos filtros — em dia fraco, esta tela fica exatamente assim: sem entrada, sem palpite forçado.</p></div>
+    </section>
+
+    <section class="view" id="view-simples-basquete">
+      <h1>Simples Basquete</h1>
+      <p class="sub">NBA e basquete internacional. No máximo <strong>3 palpites por dia</strong>. Novembro até 18/11: <strong>56,5% de acerto · +4,27u · ROI +6,9%</strong>.</p>
+      <div class="empty"><span class="pill big-pill">SEM ENTRADA</span><p>Nenhum palpite publicado nesta versão estática. Mercados: total de pontos, spread, moneyline, pace, desempenho por quarto e props de jogador — sempre com odd real da fonte.</p></div>
+    </section>
+
+    <!-- MÚLTIPLA -->
+    <section class="view" id="view-multipla">
+      <h1>Múltipla Inteligente</h1>
+      <p class="sub">A substituta do bingo antigo. Poucas pernas, pernas fortes, e a conta aberta na sua frente.</p>
+      <article class="panel">
+        <h2>Regras gravadas</h2>
+        <ul class="rules">
+          <li>Máximo de <b>3 pernas</b></li>
+          <li>Probabilidade mínima de <b>68% por perna</b></li>
+          <li>Probabilidade conjunta mínima de <b>25%</b> — calculada e exibida antes de salvar/publicar</li>
+          <li>1 mercado por jogo (sem correlação escondida)</li>
+          <li>Stake sugerida pequena: <b>0,25u a 0,5u</b></li>
+        </ul>
+        <h3>Exemplo de como a conta é mostrada</h3>
+        <div class="ticket">
+          <div class="ticket-row"><span>Perna 1 — Dupla chance (prob. 75%)</span><b>@ 1,33</b></div>
+          <div class="ticket-row"><span>Perna 2 — Under gols com folga (prob. 72%)</span><b>@ 1,39</b></div>
+          <div class="ticket-row"><span>Perna 3 — Handicap positivo (prob. 68%)</span><b>@ 1,47</b></div>
+          <div class="ticket-row total-row"><span>Odd total · Prob. conjunta: 0,75 × 0,72 × 0,68 = <b>36,7%</b></span><b>@ 2,72</b></div>
+        </div>
+        <p class="note">Exemplo ilustrativo da matemática — não é um palpite. Compare: 36,7% de chance aqui contra ~10,5% de acerto real do bingo antigo.</p>
+      </article>
+    </section>
+
+    <!-- GERADOR -->
+    <section class="view" id="view-gerador">
+      <h1>Gerador de Odd Alta</h1>
+      <p class="sub">Odd alta com risco controlado — nunca com promessa falsa.</p>
+      <div class="alert-amber"><strong>⚠ Aviso honesto:</strong> odd alta nunca é garantida nem “segura” de verdade. Os modos abaixo só reduzem o risco em relação a uma múltipla comum (pernas mais prováveis, poucas pernas, mercados protetores). Em odds 15–20, a probabilidade conjunta real continua baixa — e ela é sempre mostrada antes.</div>
+      <article class="panel">
+        <div class="form-grid">
+          <label>Esporte
+            <select id="genSport"><option value="futebol">Futebol</option><option value="basquete">Basquete</option></select>
+          </label>
+          <label>Odd alvo
+            <select id="genTarget"><option>5</option><option selected>8</option><option>10</option><option>15</option><option>20</option></select>
+          </label>
+          <label>Modo de risco
+            <select id="genMode">
+              <option value="seguro" selected>Seguro — pernas ≥ 75%</option>
+              <option value="equilibrado">Equilibrado — pernas ≥ 65%</option>
+              <option value="arrojado">Arrojado — pernas ≥ 55%</option>
+            </select>
+          </label>
+        </div>
+        <button class="btn" id="genBtn" type="button">Gerar opções</button>
+        <div id="genOut" class="gen-out"><p class="note">As opções usam pernas de demonstração da estrutura (mercados protetores) só para mostrar a matemática. Com a The Odds API conectada na versão com servidor, as pernas passam a ser jogos e odds reais do dia.</p></div>
+      </article>
+    </section>
+
+    <!-- AO VIVO -->
+    <section class="view" id="view-ao-vivo">
+      <h1>Jogos ao Vivo</h1>
+      <p class="sub">Acompanhamento e análise ao vivo de futebol e basquete.</p>
+      <div class="empty"><span class="pill big-pill">AGUARDANDO FONTE AO VIVO</span><p>Placar, estatísticas e o modelo ao vivo dependem das fontes públicas (ESPN) e da versão com servidor. Nesta versão estática, nenhum placar é inventado ou simulado como se fosse real.</p></div>
+    </section>
+
+    <!-- MERCADOS -->
+    <section class="view" id="view-mercados">
+      <h1>Melhores Mercados</h1>
+      <p class="sub">Catálogo completo de mercados. Regra de ouro: <strong>sem odd real, o mercado fica indisponível</strong> — nada de odd ou linha inventada.</p>
+      <div class="cards">
+        <article class="panel"><h2>⚽ Futebol — todos os mercados</h2>
+          <ul class="chips">
+            <li>Resultado 1X2</li><li>Dupla Chance</li><li>Empate Anula (DNB)</li><li>Handicap Europeu</li><li>Handicap Asiático (0,25 / 0,5 / 0,75)</li><li>Gols Over/Under — linhas principais e alternativas (0,5 a 6,5)</li><li>Gols por equipe (team totals)</li><li>BTTS — Ambas marcam</li><li>BTTS + Over 2,5</li><li>Escanteios: total, por equipe, handicap, 1º tempo</li><li>Cartões: total, por equipe, jogador</li><li>1º tempo: resultado e gols</li><li>HT/FT</li><li>Margem de vitória</li><li>Placar exato</li><li>Props de jogador: gol, 2+ gols, chutes, chutes ao gol, assistências</li>
+          </ul>
+          <p class="note">Escanteios e cartões dependem das casas da região EU da The Odds API e de ligas grandes perto do jogo — cobertura limitada, mostrada como está.</p>
+        </article>
+        <article class="panel"><h2>🏀 Basquete — mercados</h2>
+          <ul class="chips">
+            <li>Moneyline</li><li>Spread</li><li>Total de pontos Over/Under</li><li>Total por equipe</li><li>1º tempo e por quarto</li><li>Pace / projeção de total</li><li>Props de jogador: pontos, rebotes, assistências, 3 pontos</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- DESEMPENHO -->
+    <section class="view" id="view-desempenho">
+      <h1>Desempenho</h1>
+      <p class="sub">Novembro/2026 até 18/11, por produto. Use esta tela para bloquear mercado ruim: quem fica negativo de forma consistente sai da rotação até provar o contrário.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Produto</th><th>N</th><th>GREEN</th><th>RED</th><th>VOID</th><th>Pend.</th><th>Acerto</th><th>Lucro</th><th>ROI</th></tr></thead>
+        <tbody>
+          <tr><td>Simples Futebol</td><td>40</td><td class="green">20</td><td class="red">14</td><td>1</td><td>5</td><td>58,8%</td><td class="green">+4,09u</td><td class="green">+12,0%</td></tr>
+          <tr><td>Simples Basquete (NBA)</td><td>67</td><td class="green">35</td><td class="red">27</td><td>0</td><td>5</td><td>56,5%</td><td class="green">+4,27u</td><td class="green">+6,9%</td></tr>
+          <tr class="row-alert"><td>Bingos antigos (aposentado)</td><td>21</td><td class="green">2</td><td class="red">17</td><td>0</td><td>2</td><td>10,5%</td><td class="red">−3,02u</td><td class="red">−23,2%</td></tr>
+          <tr class="row-total"><td>Total</td><td>128</td><td class="green">57</td><td class="red">58</td><td>1</td><td>12</td><td>—</td><td class="green">+5,34u</td><td class="green">+4,9%</td></tr>
+        </tbody>
+      </table></div>
+      <article class="panel"><h2>Calibração</h2><p>O NEXO compara probabilidade prevista × acerto real por esporte e tipo de mercado. Lição de novembro (auditoria do projeto anterior): na NBA, palpites antigos estimavam em média 42,4% e acertavam 28,7% — superconfiança. Por isso o modelo atual reduz o peso próprio frente ao mercado, limita a odd e pode zerar um mercado que esteja perdendo para o mercado de forma consistente.</p></article>
+    </section>
+
+    <!-- HISTÓRICO -->
+    <section class="view" id="view-historico">
+      <h1>Histórico — dia a dia</h1>
+      <p class="sub">Resultado diário de novembro/2026 (unidades).</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Dia</th><th>GREEN</th><th>RED</th><th>Resultado</th><th>Acumulado</th></tr></thead>
+        <tbody id="dailyTable"></tbody>
+      </table></div>
+    </section>
+
+    <!-- FECHAMENTO -->
+    <section class="view" id="view-fechamento">
+      <h1>Fechamento Mensal</h1>
+      <p class="sub">Texto pronto do fechamento de novembro/2026, no formato de Telegram/WhatsApp.</p>
+      <article class="panel">
+        <pre id="closingText">📊 NEXO SPORTS | FECHAMENTO MENSAL
+🗓️ Novembro/2026 (até 18/11)
+
+⚽ Simples Futebol: 40 palpites
+🟢 20 GREEN · 🔴 14 RED · ⚪ 1 VOID · 🟡 5 pendentes
+🎯 Acerto: 58,8% · 💰 +4,09u · 📈 ROI +12,0%
+
+🏀 Simples NBA: 67 palpites
+🟢 35 GREEN · 🔴 27 RED · ⚪ 0 VOID · 🟡 5 pendentes
+🎯 Acerto: 56,5% · 💰 +4,27u · 📈 ROI +6,9%
+
+🎰 Bingos (modelo antigo, aposentado): 21 bilhetes
+🟢 2 GREEN · 🔴 17 RED
+🎯 Acerto: 10,5% · 💰 −3,02u · 📈 ROI −23,2%
+
+🧾 TOTAL
+🟢 57 GREEN · 🔴 58 RED · ⚪ 1 VOID · 🟡 12 pendentes
+💰 +5,34u · 📈 ROI +4,9%
+
+🍀 NEXO Sports — Sports Intelligence. Análise envolve risco; nenhum resultado é garantido.</pre>
+        <button class="btn" id="copyClosing" type="button">Copiar fechamento</button>
+        <span id="copyOk" class="note"></span>
+      </article>
+    </section>
+
+    <!-- BANCA -->
+    <section class="view" id="view-banca">
+      <h1>Banca</h1>
+      <p class="sub">Gestão simples e com teto: <strong>stake máxima de 3u por palpite</strong>. 1u = 1% da banca. Múltiplas e odd alta: 0,25u a 0,5u.</p>
+      <article class="panel">
+        <div class="form-grid">
+          <label>Sua banca (R$) <input type="number" id="bankInput" min="0" step="10" placeholder="Ex.: 1000"></label>
+        </div>
+        <ul class="stats" id="bankOut">
+          <li><span>1u (1%)</span><b>—</b></li>
+          <li><span>Stake máxima simples (3u)</span><b>—</b></li>
+          <li><span>Múltipla / odd alta (0,5u)</span><b>—</b></li>
+        </ul>
+        <p class="note">O teto existe porque stake variável grande transforma um dia bom/ruim comum em montanha-russa: em novembro, um único dia chegou a +8,50u pelo tamanho das stakes, não só pelos acertos. Kelly fracionado, sem “recuperação” de prejuízo.</p>
+      </article>
+    </section>
+
+    <!-- VIP -->
+    <section class="view" id="view-vip">
+      <h1>Área VIP</h1>
+      <p class="sub">Conteúdo publicado para assinantes: simples do dia, Múltipla Inteligente e Odd Alta do dia (quando houver valor).</p>
+      <div class="empty"><span class="pill big-pill">NADA PUBLICADO AGORA</span><p>Quando o dono publicar (na versão com servidor, a publicação pode ser automática após a rodada), o conteúdo VIP aparece aqui. Assinante não vê configurações, chaves de API, filtros do modelo nem a área do dono.</p></div>
+    </section>
+
+    <!-- FONTES -->
+    <section class="view" id="view-fontes">
+      <h1>Fontes de Dados</h1>
+      <p class="sub">Odd real vem da The Odds API; estatística e consulta vêm de dados públicos. Sem fonte, sem palpite.</p>
+      <article class="panel">
+        <h2>🎲 The Odds API</h2>
+        <p>Status: <b class="amber">aguardando configuração (versão com servidor)</b></p>
+        <div class="form-grid">
+          <label>Chave 1 <input type="password" disabled placeholder="Configurar na versão com servidor"></label>
+          <label>Chave 2 <input type="password" disabled placeholder="Configurar na versão com servidor"></label>
+          <label>Chave 3 <input type="password" disabled placeholder="Configurar na versão com servidor"></label>
+        </div>
+        <p class="note"><strong>Os campos ficam desabilitados de propósito nesta versão estática:</strong> chave de API nunca é digitada nem guardada num site estático. Na versão com servidor, as chaves ficam criptografadas no servidor (até 5, com rodízio, contador de créditos e orçamento diário) — regiões UK/EU/US, mercados extras como spreads/totais alternativos, BTTS, DNB e team totals.</p>
+      </article>
+      <article class="panel">
+        <h2>🌐 Dados públicos — ESPN (consulta)</h2>
+        <p>Fonte pública de jogos, placares, estatísticas de times, tabelas e forma recente, cruzada com a odd real para calcular probabilidade, EV e calibração. Fontes públicas de apoio podem ser usadas na conferência de resultados.</p>
+        <p class="note">Transparência desta versão: este é o front-end publicado do NEXO Sports. A automação ao vivo (The Odds API + agendamento/cron + conferência automática) conecta na versão com servidor, no mesmo endereço, sem mudar nada do que você vê aqui.</p>
+      </article>
+    </section>
+
+    <!-- AUTOMAÇÃO / DONO -->
+    <section class="view" id="view-automacao">
+      <h1>Automação <span class="pill owner-pill">VISÃO DO DONO</span></h1>
+      <p class="sub">Área exclusiva do dono do app. Usuário comum e assinante VIP não veem esta área nem as configurações do modelo, chaves de API, gestão de usuários e envio de fechamento.</p>
+      <article class="panel">
+        <h2>Fluxo automático (palpites geram sozinhos)</h2>
+        <ol class="steps">
+          <li><b>Buscar jogos do dia</b> — futebol e basquete nas fontes públicas/ESPN <span class="st amber">aguardando servidor</span></li>
+          <li><b>Puxar odds reais</b> — The Odds API, rodízio de chaves e orçamento de créditos <span class="st amber">aguardando chave</span></li>
+          <li><b>Rodar o modelo</b> — probabilidade, EV e calibração; gerar Simples (máx. 3/esporte), Múltipla Inteligente e Odd Alta do dia <span class="st">pronto no desenho</span></li>
+          <li><b>Publicar automaticamente</b> o que passar nos filtros — dia sem valor = SEM ENTRADA <span class="st">pronto no desenho</span></li>
+          <li><b>Conferência automática</b> pós-jogo (GREEN/RED/VOID) e atualização de desempenho/banca <span class="st amber">aguardando servidor</span></li>
+          <li><b>Fechamento e notificações</b> — diário/mensal, push e Telegram/WhatsApp se configurados <span class="st amber">aguardando servidor</span></li>
+        </ol>
+        <h3>Grade de horários (referência de produção)</h3>
+        <p>Rodadas a cada 2h, das 11h às 07h (horário de Brasília), mais conferência contínua após os jogos. Alerta automático se ficar 4h ou mais sem rodar.</p>
+        <p class="note">Nesta versão estática publicada, o disparo por horário (cron) ainda não roda: ele é ativado na versão com servidor, junto com as chaves da The Odds API. Nada é gerado com odd inventada enquanto a fonte estiver fora.</p>
+      </article>
+    </section>
+
+    <!-- AJUDA -->
+    <section class="view" id="view-ajuda">
+      <h1>Ajuda</h1>
+      <article class="panel">
+        <h2>Como o NEXO funciona</h2>
+        <ul class="rules">
+          <li>O modelo cruza <b>estatística pública</b> (forma, casa/fora, ESPN) com <b>odd real</b> (The Odds API) para estimar probabilidade e valor (EV).</li>
+          <li><b>Simples:</b> no máximo 3 por esporte/dia. Sem valor suficiente, o dia é de SEM ENTRADA.</li>
+          <li><b>Múltipla Inteligente:</b> até 3 pernas fortes (≥ 68% cada), probabilidade conjunta ≥ 25% sempre exibida.</li>
+          <li><b>Gerador de Odd Alta:</b> modos Seguro, Equilibrado e Arrojado — com a probabilidade conjunta real à mostra.</li>
+          <li><b>Área do dono:</b> configurações, fontes, automação, usuários e publicação são exclusivos do dono do app.</li>
+        </ul>
+        <h2>⚠ Aviso de risco</h2>
+        <p>Análise esportiva envolve risco. Nenhum palpite, simples, múltipla ou odd alta tem resultado garantido, e desempenho passado (incluindo os números de novembro/2026 mostrados neste app) não garante desempenho futuro. Aposte apenas valores que você pode perder, respeite o teto de stake da sua banca e, se apostar deixar de ser diversão, procure ajuda.</p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <img src="assets/logo.svg" alt="" class="foot-logo">
+      <p><strong>NEXO Sports — Sports Intelligence</strong><br>
+      Análise esportiva envolve risco e nenhum resultado é garantido. Jogue com responsabilidade.</p>
+    </footer>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
